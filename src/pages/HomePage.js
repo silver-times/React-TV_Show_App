@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import SearchBar from "../components/SearchBar";
 import ShowsContext from "../context/shows/showsContext";
 import ShowCard from "../components/ShowCard";
+import Loader from "../components/Loader";
 
 const Homepage = () => {
   const { shows, loading } = useContext(ShowsContext);
@@ -10,7 +11,7 @@ const Homepage = () => {
     <div className="max-w-[1000px] mx-auto py-2">
       <SearchBar />
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : (
         <div className="grid grid-cols-5 gap-2">
           {shows.map((show) => (

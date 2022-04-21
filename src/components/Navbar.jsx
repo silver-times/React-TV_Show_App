@@ -8,7 +8,6 @@ const Navbar = () => {
         <ul className="flex mr-4 text-2xl">
           <li className="mr-4">Home</li>
           <li className="">About</li>
-          <li className="">Contact Us</li>
         </ul>
       </div>
     </div>
