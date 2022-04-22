@@ -8,7 +8,7 @@ const Homepage = () => {
   const { shows, loading } = useContext(ShowsContext);
 
   return (
-    <div className="max-w-[1000px] mx-auto py-2">
+    <div className="max-w-[1000px]  mx-auto py-2">
       <SearchBar />
       {loading ? (
         <Loader />

@@ -8,18 +8,18 @@ import SingleShowPage from "./pages/SingleShowPage";
 
 const App = () => {
   return (
-    <div className="">
-      <Navbar />
+    <BrowserRouter>
       <div className="">
-        <BrowserRouter>
+        <Navbar />
+        <div className="">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/single-show/:id" element={<SingleShowPage />} />
           </Routes>
-        </BrowserRouter>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 

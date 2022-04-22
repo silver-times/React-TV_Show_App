@@ -36,9 +36,7 @@ const SingleShowPage = ({ match }) => {
             alt={singleShow.name}
           />
           <div className="">
-            <h1 className="text-3xl uppercase font-bold mt-4">
-              {singleShow.name}
-            </h1>
+            <h1 className="text-3xl uppercase font-bold">{singleShow.name}</h1>
             {singleShow.genres &&
               singleShow.genres.map((genre) => (
                 <span
